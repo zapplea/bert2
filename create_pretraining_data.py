@@ -328,7 +328,6 @@ def create_instances_from_document(
       current_length = 0
     i += 1
   print('instances: \n',instances)
-  exit()
   return instances
 
 
