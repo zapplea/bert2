@@ -214,7 +214,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
 
   rng.shuffle(instances)
   print(instances)
-  exit()
+  print('====================')
   return instances
 
 
