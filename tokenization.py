@@ -177,8 +177,7 @@ class FullTokenizer(object):
       for sub_token in self.wordpiece_tokenizer.tokenize(token):
         print(sub_token)
         split_tokens.append(sub_token)
-    print(split_tokens)
-    exit()
+    print('split tokens: ',split_tokens)
 
     return split_tokens
 

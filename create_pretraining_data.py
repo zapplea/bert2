@@ -198,10 +198,12 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
         tokens = tokenizer.tokenize(line)
         if tokens:
           all_documents[-1].append(tokens)
-
+  print('all documents: \n', all_documents)
+  exit()
   # Remove empty documents
   all_documents = [x for x in all_documents if x]
   rng.shuffle(all_documents)
+
 
   vocab_words = list(tokenizer.vocab.keys())
   instances = []
