@@ -213,6 +213,8 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
               masked_lm_prob, max_predictions_per_seq, vocab_words, rng))
 
   rng.shuffle(instances)
+  print(instances)
+  exit()
   return instances
 
 
@@ -327,7 +329,6 @@ def create_instances_from_document(
       current_chunk = []
       current_length = 0
     i += 1
-  print('instances: \n',instances)
   return instances
 
 
